@@ -3,7 +3,7 @@ How to create a simple Twitter Bot in BASH
 
 ## Overview
 
-In early 2018, I created The Musicology Bot ([@musicologybot](https://twitter.com/musicologybot)), a simple Twitter Bot for the [#musicScience](https://twitter.com/search?q=%23musicScience&src=typd) and [#digitalmusicology](https://twitter.com/search?q=%23digitalmusicology&src=typd) community. Below I'll describe how to create a similar bot in BASH.
+In early 2018, I created The Musicology Bot ([@musicologybot](https://twitter.com/musicologybot)), a simple Twitter Bot for the [#musicScience](https://twitter.com/search?q=%23musicScience&src=typd) and [#digitalMusicology](https://twitter.com/search?q=%23digitalmusicology&src=typd) community. Below I'll describe how to create a similar bot in BASH.
 
 The Musicology Bot can do three (3) main things:
 
@@ -17,7 +17,7 @@ Each of these functions will be handled by a different script, meaning that our 
 
 We'll start by creating the posting script. We'll use Twurl to interact with the Twitter API (I'm going to assume that Twurl is already set up with your Twitter credentials). Twurl is pretty easy to use. For example, to post a tweet:
 
-    twurl -d "status=Hello, Wolrd!" /1.1/statuses/update.json
+    twurl -d "status=Hello, World!" /1.1/statuses/update.json
     
 We want our bot to randomly select Tweets from stored in a text file. We'll create a text file called FUTURE_POST.txt where we'll store each future tweet on an individual line. We'll then write the core of our posting script:
 
