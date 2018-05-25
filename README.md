@@ -58,7 +58,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin   # Change wit
 
 ### Post new tweet ###################
 # Check if FUTURE_POST.txt is empty
-[ -s FUTURE_POST.txt ] || exit # exit if FUTURE.txt is empty
+[ -s FUTURE_POST.txt ] || exit # exit if FUTURE_POST.txt is empty
 
 # Send DM if FUTURE.txt > 10
 TWEETSLEFT=$(wc -l < FUTURE_POST.txt)
