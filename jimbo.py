@@ -5,6 +5,8 @@ import sys # import bash variables
 import os
 from subprocess import call
 
+# This script is largely based on @smkand's jymbo.py script. I simply adapted it for my own use. All credit goes to original author. https://github.com/smkand/command-line-chatbot/blob/master/jimbo.py
+
 reflections = {
     "am": "are",
     "was": "were",
