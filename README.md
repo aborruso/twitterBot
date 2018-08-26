@@ -110,7 +110,7 @@ rm ICMPC15_ESCOM10.txt
 
 ```
 
-### Responding
+## Responding
 
 The last thing we want to do is to write a simple chat bot that will reply to users who tweet directly at our bot. For this part, I used [@smkand](https://github.com/smkand)'s [command-line-chatbot](https://github.com/smkand/command-line-chatbot/blob/master/jimbo.py), which is written in python. It's simple and easy to modify to your own need. The file below, which I saved as musicologybot_REPLY.sh, uses a modified version of jimbo.py, adapted for musicology purposes. It's also set to use the [wiki](https://formulae.brew.sh/formula/wiki) command-line tool if a users asks a question like "i have a question about". It also uses my own [weather](https://github.com/hleveillegauvin/weather) command-line tool to answer weather-related questions.
 
@@ -193,3 +193,7 @@ done < tweets_to_reply_to
 
 rm temp_reply temp_reply2 tweets_to_reply_to
 ```
+
+## Automating everything
+
+Once you have the three scripts running, you can automated them by scheduling a cron job for each of them. More on that [here](https://ole.michelsen.dk/blog/schedule-jobs-with-crontab-on-mac-osx.html).
